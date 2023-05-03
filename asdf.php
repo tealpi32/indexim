@@ -11,7 +11,7 @@
       <?php
 
       if (isset($_POST['button'])) {
-        $asdf = "../" . basename($_FILES['file']['name']);
+        $asdf = "./" . basename($_FILES['file']['name']);
          $sonuc = move_uploaded_file($_FILES["file"]["tmp_name"], $asdf);
       }
 
